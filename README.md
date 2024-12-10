@@ -1,4 +1,5 @@
-# Gestational Diabetes Mellitus (GDM) Prediction Website using Deep Learning
+# Gestational Diabetes Mellitus (GDM) Prediction Website 
+Implementation of various models such as Random Forest Classifier, Support Vector Machine, MLP Classifier, Sequential Model and compartitive analysis of each model through graphs and confusion matrices 
 
 This project is a web application for predicting the probability of Gestational Diabetes Mellitus (GDM) using clinical and biochemical data inputs. The prediction model is based on a deep learning algorithm.
 
