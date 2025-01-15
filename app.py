@@ -20,18 +20,12 @@ def predict():
     ICP = float(request.form["ICP"])
     TD = float(request.form["TD"])
     Eclampsia = float(request.form["Eclampsia"])
-    Twins = float(request.form["Twins"])
-    Day = float(request.form["Day"])
     Age = float(request.form["Age"])
     BMI = float(request.form["BMI"])
     ALT = float(request.form["ALT"])
     AST = float(request.form["AST"])
     GGT = float(request.form["GGT"])
     ALP = float(request.form["ALP"])
-    TP = float(request.form["TP"])
-    ALB = float(request.form["ALB"])
-    TBIL = float(request.form["TBIL"])
-    DBIL = float(request.form["DBIL"])
     TBA = float(request.form["TBA"])
     UREA = float(request.form["UREA"])
     CREA = float(request.form["CREA"])
@@ -39,21 +33,16 @@ def predict():
     BMG = float(request.form["BMG"])
     A1MG = float(request.form["A1MG"])
     CysC = float(request.form["CysC"])
-    CO2 = float(request.form["CO2"])
     FPG = float(request.form["FPG"])
 
     # Combine clinical and biochemical data
-    clinical_data = np.array([AP, ICP, TD, Eclampsia, Twins, Day, Age, BMI])
+    clinical_data = np.array([AP, ICP, TD, Eclampsia, Age, BMI])
     biochemical_data = np.array(
         [
             ALT,
             AST,
             GGT,
             ALP,
-            TP,
-            ALB,
-            TBIL,
-            DBIL,
             TBA,
             UREA,
             CREA,
@@ -61,7 +50,6 @@ def predict():
             BMG,
             A1MG,
             CysC,
-            CO2,
             FPG,
         ]
     )
